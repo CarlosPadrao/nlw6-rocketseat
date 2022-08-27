@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-margin-top: 30px;
     
     body {
         background-color: #F9F9F9;
@@ -59,7 +60,7 @@ html {
 
         #inicio {
             .inicio {
-                padding: 160px 0px;
+                padding: 170px 0px;
                 .left {
                     max-width: 365px;
                     h2 {
@@ -115,7 +116,7 @@ html {
         #sobre {
             background: #FFFFFF;
             .sobre {
-                padding: 160px 0px;
+                padding: 195px 0 160px 0;
                 .left {
                     position: relative;
                     &::before {
@@ -424,4 +425,3 @@ html {
         }
     }
 }
-
