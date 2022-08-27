@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/frontend.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/scripts/frontend.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <title>by @carlospadrao</title>
+    <!-- Projeto de estudo -  NLW6 da Rocketseat -->
+</head>
+<body>
+    <main>
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center py-3">
+                    <div class="logo"><h1>NomeDa<span>Marca</span>.</h1></div>
+                    <nav>
+                        <ul class="d-flex align-items-center mb-0">
+                            <li><a href="#inicio">Início</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                            <li><a href="#depoimentos">Depoimentos</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Início -->
+        <section id="inicio">
+            <div class="container">
+                <div class="inicio d-flex justify-content-between align-items-center">
+                    <div class="col-md-5 px-0 left">
+                        <h2>Saúde natural para os seus cabelos</h2>
+                        <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
+                        <a href="#" onclick="alerta()">Agendar um horário</a>
+                    </div>
+                    <div class="col-md-7 right"> <img src="source/images/inicio.png" /> </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Sobre -->
+        <section id="sobre">
+            <div class="container">
+                <div class="sobre d-flex">
+                    <div class="left"> <img src="source/images/sobre.png" /> </div>
+                    <div class="col-md-8 right ml-auto">
+                        <h2>Sobre nós</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis arcu quis nisi luctus, id accumsan felis tristique. Proin quis bibendum diam. Sed consequat nisl laoreet eros ultricies pellentesque. Nullam in est porta, pellentesque massa vitae, vehicula risus. 
+                            <br/><br/>
+                            In placerat, felis vitae sodales dictum, lacus quam pretium mi, ut pretium urna turpis eu dui. Vestibulum id ullamcorper nibh. Donec luctus, nunc finibus elementum suscipit, tortor augue vulputate sapien, vitae feugiat enim augue sed. 
+                            <br/><br/>
+                            Quisque id aliquam elit. Suspendisse congue pharetra maximus. Duis rutrum velit a leo euismod dictum. Sed sodales est efficitur arcu tincidunt tincidunt. Curabitur fringilla, risus at feugiat feugiat, nisl nulla tincidunt tellus, elementum elementum lorem nisl eleifend dolor. Nullam eget dui at sem ullamcorper luctus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Serviços -->
+        <section id="servicos">
+            <div class="container">
+                <div class="servicos">
+                    <div class="col-md-6 mx-auto px-0 mb-5">
+                        <h2>Serviços</h2>
+                        <p>
+                            Com mais de 10 anos no mercado, o <s><span>NomeDaMarca</span></s> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais
+                        </p>
+                    </div>
+                    <div class="items d-flex align-items-center justify-content-between">
+                        <div class="cards"> 
+                            <img src="assets/images/icons/terapia.png"/> 
+                            <p>Terapia capilar</p> 
+                            <span>
+                                Terapia completa para couro cabeludo e fios, protegendo todos os tipos de cabelos, inclusive os longos e finos.
+                            </span> 
+                        </div>
+                        <div class="cards"> 
+                            <img src="assets/images/icons/cortes.png"/> 
+                            <p>Cortes</p> 
+                            <span>
+                                A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos.
+                            </span> 
+                        </div>
+                        <div class="cards"> 
+                            <img src="assets/images/icons/tratamento.png"/> 
+                            <p>Tratamentos</p> 
+                            <span>
+                                O <s><b>NomeDaMarca</b></s> conta com diversos tratamentos naturais e totalmente veganos, para qualquer tipo de cabelo.
+                            </span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Depoimentos -->
+        <section id="depoimentos">
+            <div class="container">
+                <div class="depoimentos mx-auto">
+                    <h2>Depoimentos de quem já passou por aqui</h2>
+                    <div class="items d-flex align-items-center justify-content-between">
+                        <div class="cards col-md-5 px-0">
+                            <div class="descricao">
+                                <p>
+                                    Eu sou cliente do <s>NomeDaMarca</s> há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.   
+                                </p>
+                            </div>
+                            <div class="autor">
+                                Wanessa Souza
+                            </div>
+                        </div>
+                        <div class="cards col-md-5 px-0">
+                            <div class="descricao">
+                                <p>
+                                    Minha mãe frequenta o salão há anos e me levou um dia para conhecer. Minha experiência foi incrível, eu continuo fazendo o a terapia capilar e isso salvou o meu cabelo. Adoro todos os profissionais do <s>NomeDaMarca</s>.
+                                </p>
+                            </div>
+                            <div class="autor">
+                                Luna Falcão
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Contato -->
+        <section id="contato">
+            <div class="container">
+                <section class="contato d-flex align-items-center">
+                    <div class="col-md-6 left">
+                        <h2>Entre em contato com a gente!</h2>
+                        <p>Entre em contato com a <s><b>NomeDaMarca</b></s>, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
+                        <a href="#" onclick="alerta()">Entrar em contato</a>
+                    </div>
+                    <div class="col-md-6 right">
+                        <div class="d-flex flex-column">
+                            <p class="tel">11 12345-1234</p>
+                            <p class="location">R. Lorem Ipsum, 123</p>
+                            <p class="email">contato@contato.com.br</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container d-flex align-items-center justify-content-between">
+                <div class="infos">
+                    <div class="logo"><p>NomeDa<span>Marca</span>.</p></div>
+                    <div class="copyright">
+                        <p class="mb-3">©2021 NomeDaMarca.</p>
+                        <p>Todos os direitos reservados.</p>
+                    </div>
+                </div>
+                <div class="sociais">
+                    <ul>
+                        <li><a href="https://www.instagram.com" target="_blank" class="insta"></a></li>
+                        <li><a href="https://www.facebook.com" target="_blank" class="face"></a></li>
+                        <li><a href="https://www.youtube.com" target="_blank" class="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
