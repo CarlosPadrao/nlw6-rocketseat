@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,24 +10,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>by @carlospadrao</title>
-    <!-- Projeto de estudo -  NLW6 da Rocketseat -->
+    <!-- Projeto de estudo -  NLW6 da Rocketseat
+    https://github.com/CarlosPadrao
+    Obrigado -->
 </head>
 <body>
     <main id="main">
         <!-- Header -->
         <header>
             <div class="container">
-                <div class="d-flex justify-content-between align-items-center py-3">
+                <div class="d-flex justify-content-between align-items-center py-3 px-3 px-md-0">
                     <div class="logo"><h1>NomeDa<span>Marca</span>.</h1></div>
                     <nav>
-                        <ul class="d-flex align-items-center mb-0">
+                        <ul class="d-none d-md-flex align-items-center mb-0">
                             <li><a href="#main">Início</a></li>
                             <li><a href="#sobre">Sobre</a></li>
                             <li><a href="#servicos">Serviços</a></li>
                             <li><a href="#depoimentos">Depoimentos</a></li>
                             <li><a href="#contato">Contato</a></li>
                         </ul>
+                        <a href="#" class="d-md-none"><span class="material-symbols-outlined">menu</span></a>
                     </nav>
                 </div>
             </div>
@@ -36,8 +40,8 @@
         <!-- Início -->
         <section id="inicio">
             <div class="container">
-                <div class="inicio d-flex justify-content-between align-items-center">
-                    <div class="col-md-5 px-0 left">
+                <div class="inicio d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="col-md-5 px-0 left order-1 order-md-0">
                         <h2>Saúde natural para os seus cabelos</h2>
                         <p>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</p>
                         <a href="#" onclick="alerta()">Agendar um horário</a>
@@ -51,9 +55,9 @@
         <!-- Sobre -->
         <section id="sobre">
             <div class="container">
-                <div class="sobre d-flex">
+                <div class="sobre d-flex flex-wrap">
                     <div class="left"> <img src="source/images/sobre.png" /> </div>
-                    <div class="col-md-8 right ml-auto">
+                    <div class="col-md-8 right ml-md-auto">
                         <h2>Sobre nós</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis arcu quis nisi luctus, id accumsan felis tristique. Proin quis bibendum diam. Sed consequat nisl laoreet eros ultricies pellentesque. Nullam in est porta, pellentesque massa vitae, vehicula risus. 
@@ -72,28 +76,28 @@
         <section id="servicos">
             <div class="container">
                 <div class="servicos">
-                    <div class="col-md-6 mx-auto px-0 mb-5">
+                    <div class="col-md-6 mx-auto mb-5">
                         <h2>Serviços</h2>
                         <p>
                             Com mais de 10 anos no mercado, o <s><span>NomeDaMarca</span></s> já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais
                         </p>
                     </div>
-                    <div class="items d-flex align-items-center justify-content-between">
-                        <div class="cards"> 
+                    <div class="items d-flex flex-wrap align-items-center justify-content-between px-3 px-md-0">
+                        <div class="cards mb-4 mb-md-0"> 
                             <img src="assets/images/icons/terapia.png"/> 
                             <p>Terapia capilar</p> 
                             <span>
                                 Terapia completa para couro cabeludo e fios, protegendo todos os tipos de cabelos, inclusive os longos e finos.
                             </span> 
                         </div>
-                        <div class="cards"> 
+                        <div class="cards mb-4 mb-md-0"> 
                             <img src="assets/images/icons/cortes.png"/> 
                             <p>Cortes</p> 
                             <span>
                                 A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos.
                             </span> 
                         </div>
-                        <div class="cards"> 
+                        <div class="cards mb-4 mb-md-0"> 
                             <img src="assets/images/icons/tratamento.png"/> 
                             <p>Tratamentos</p> 
                             <span>
@@ -109,10 +113,10 @@
         <!-- Depoimentos -->
         <section id="depoimentos">
             <div class="container">
-                <div class="depoimentos mx-auto">
+                <div class="depoimentos mx-auto px-3 px-md-0">
                     <h2>Depoimentos de quem já passou por aqui</h2>
-                    <div class="items d-flex align-items-center justify-content-between">
-                        <div class="cards col-md-5 px-0">
+                    <div class="items d-flex flex-wrap align-items-center justify-content-between">
+                        <div class="cards mb-4 mb-md-0">
                             <div class="descricao">
                                 <p>
                                     Eu sou cliente do <s>NomeDaMarca</s> há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.   
@@ -122,7 +126,7 @@
                                 Wanessa Souza
                             </div>
                         </div>
-                        <div class="cards col-md-5 px-0">
+                        <div class="cards mb-4 mb-md-0">
                             <div class="descricao">
                                 <p>
                                     Minha mãe frequenta o salão há anos e me levou um dia para conhecer. Minha experiência foi incrível, eu continuo fazendo o a terapia capilar e isso salvou o meu cabelo. Adoro todos os profissionais do <s>NomeDaMarca</s>.
@@ -141,17 +145,17 @@
         <!-- Contato -->
         <section id="contato">
             <div class="container">
-                <section class="contato d-flex align-items-center">
-                    <div class="col-md-6 left">
+                <section class="contato d-flex flex-wrap align-items-center">
+                    <div class="col-md-6 left mb-5 mb-md-0">
                         <h2>Entre em contato com a gente!</h2>
                         <p>Entre em contato com a <s><b>NomeDaMarca</b></s>, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.</p>
                         <a href="#" onclick="alerta()">Entrar em contato</a>
                     </div>
                     <div class="col-md-6 right">
                         <div class="d-flex flex-column">
-                            <p class="tel">11 12345-1234</p>
-                            <p class="location">R. Lorem Ipsum, 123</p>
-                            <p class="email">contato@contato.com.br</p>
+                            <p class="tel mb-3">11 12345-1234</p>
+                            <p class="location mb-3">R. Lorem Ipsum, 123</p>
+                            <p class="email mb-3">contato@contato.com.br</p>
                         </div>
                     </div>
                 </section>
